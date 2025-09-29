@@ -3,7 +3,7 @@
 This project demonstrates how to build a **smart retail shelf** using the **XIAO ESP32-S3** with camera support and Google's **Gemini API**.  
 The ESP32-S3 captures images via a simple web interface, sends them to Gemini for analysis, and returns product counts or descriptions in real-time.
 
-<img src="images/demo_ui.png" width="600" alt="Demo UI Screenshot">
+<img src="ESP32_response.png" width="600" alt="Demo UI Screenshot">
 
 ---
 
@@ -18,19 +18,6 @@ The ESP32-S3 captures images via a simple web interface, sends them to Gemini fo
 
 ---
 
-## 📂 Project Structure
-
-/ (root)
-├── src/ # Arduino sketch / main code
-├── images/ # Screenshots, diagrams
-├── docs/ # Documentation (setup, wiring, API usage)
-└── README.md # Project overview
-
-markdown
-Copy code
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Hardware Required
@@ -42,13 +29,13 @@ Copy code
 ### 2. Software Required
 - [Arduino IDE](https://www.arduino.cc/en/software) or [PlatformIO](https://platformio.org/)  
 - ESP32 board support package installed  
-- Google Gemini API key ([Get it here](https://ai.google.dev/))  
+- Google Gemini API key ([Get it here](https://aistudio.google.com/apikey))  https://aistudio.google.com/apikey
 
 ### 3. Setup
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/xiao-esp32s3-retail-shelf.git
-   cd xiao-esp32s3-retail-shelf
+   git clone https://github.com/sushildwivedi27/esp32cam_gemini_ai.git
+   cd esp32cam_gemini_ai
 Open the project in Arduino IDE.
 
 Update the following in the code:
@@ -87,12 +74,11 @@ JPEG Quality: 12 (adjustable)
 Classification Prompt: Modify userPrompt in code for custom tasks
 
 📸 Demo
-<img src="images/demo_capture.png" width="600" alt="Capture Demo">
+<img src="esp32_UI.png" width="600" alt="Capture Demo">
 ⚡ Example Prompt
 You can customize the AI behavior by editing userPrompt:
 
-cpp
-Copy code
+
 String userPrompt = "Please analyze the given image and provide a count of each product in the following format:\n"
                     "{\n"
                     "'Product 1 Name': number of 'Product 1',\n"
