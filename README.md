@@ -1,1 +1,2 @@
-# esp32cam_gemini_ai
+# 🛒 AI Smart Retail Shelf (XIAO ESP32-S3 + Gemini)
+
