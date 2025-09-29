@@ -33,15 +33,12 @@ The ESP32-S3 captures images via a simple web interface, sends them to Gemini fo
 
 ### 3. Setup
 1. Clone this repository:
-   ```bash
    git clone https://github.com/sushildwivedi27/esp32cam_gemini_ai.git
    cd esp32cam_gemini_ai
 Open the project in Arduino IDE.
 
 Update the following in the code:
 
-cpp
-Copy code
 const char* ssid = "YOUR_WIFI_SSID";
 const char* password = "YOUR_WIFI_PASSWORD";
 String apiKey = "YOUR_GEMINI_API_KEY";
@@ -59,8 +56,6 @@ Classify with Gemini → sends snapshot to Gemini API and shows response
 
 Results are displayed in the browser:
 
-css
-Copy code
 🧠 Gemini says: {
     "Coke Bottle": 5,
     "Chips Packet": 3,
